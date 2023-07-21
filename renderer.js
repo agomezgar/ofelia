@@ -105,7 +105,7 @@ console.log("vamos a actualizar desde y");
 })
 
 x.addEventListener("click",()=>{
-    let objeto=[nD,1]
+    let objeto=[nD,0]
     console.log("vamos a actualizar desde x")
     window.api.enviar("actualiza",objeto);
     formsy[nD].value=""

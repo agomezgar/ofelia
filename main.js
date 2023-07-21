@@ -103,7 +103,7 @@ function juntaPdf(destino){
   for (c=0;c<archivos.length;c++){
    
       console.log("Mezclando: "+archivos[c])
-      if (paginado[c]==1){
+      if (paginado[c]==0){
         console.log("El archivo "+archivos[c]+" está entero")
     await merger.add(archivos[c])
       }else{
