@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-eval'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-eval'"
+    />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css ">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+
+  
+      <title>JuntaPDF</title>
+  </head>
+  <body>
+ 
+    <h1 align="center">Unión de archivos PDF</h1>
+   
+    <div class=""container-fluid bg-primary" >
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <p align="center"><img src="icon.png"></p>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+   <div class="col-2"></div>
+   <div class="col-8">
+  <p class="h3">Indique archivos pdf para compilar...</p>
+   </div>
+   
+   <div class="col-2"></div>
+      </div>
+    
+    <p id="info"><p align="center"><i id="boton" class="fa fa-large fa-3x fa-plus-square"></i></p></p>
+    <p id="vuelta"></p>
+    <table class="table table-striped"
+      id="tabla">
+      <thead>
+        <tr>
+          <th>Archivo</th>
+          <th>Documento entero</th>
+          <th>Páginas sueltas (Ej: 3,5,7 ó 3-7)</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+      </tbody>
+    </table>
+    <div id="meteBotones"></div>
+    <div id="grabar"></div>
+
+  </body>
+  <script src="./renderer.js"></script>
+</html>

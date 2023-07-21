@@ -1,0 +1,57 @@
+{
+  "name": "juntapdf",
+  "version": "1.0.0",
+  "description": "Ya tú sabeh, mi reinah",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build:linux": "electron-builder -l",
+    "build:win": "electron-builder -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "juandeavila.test",
+    "linux": {
+      "target": [
+        "AppImage",
+        "snap",
+        "deb"
+      ],
+      "category": "Network",
+      "icon": "./build/icon/",
+      "publish": [
+        "github"
+      ]
+    },
+    "snap": {
+      "confinement": "strict",
+      "grade": "stable",
+      "plugs": [
+        "default"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./build/icon/icon.ico",
+      "publish": [
+        "github"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^25.3.0",
+    "electron-builder": "^22.9.1",
+    "electron-reloader": "^1.2.0"
+  },
+  "dependencies": {
+    "pdf-merger-js":"^4.0.0"
+  }
+}
