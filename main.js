@@ -72,7 +72,7 @@ ipcMain.on('abreDialog',function(event,datos){
         // handle fully qualified file name
       console.log(response.filePaths[0]);
       archivos[datos]=response.filePaths[0];
-      paginado[datos]=1;
+      paginado[datos]=0;
       win.webContents.send('tomaNombre',response.filePaths[0])
     } else {
       console.log("no file selected");
